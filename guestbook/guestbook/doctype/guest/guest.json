@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-05 15:12:53.218524",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "address",
+  "phone_number",
+  "group",
+  "invitation_code",
+  "number_of_attendees",
+  "table",
+  "table_number",
+  "status",
+  "check_in_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Select",
+   "label": "Group",
+   "options": "Keluarga\nTeman\nRekan Kerja\nLainnya"
+  },
+  {
+   "fieldname": "invitation_code",
+   "fieldtype": "Data",
+   "label": "Invitation Code"
+  },
+  {
+   "fieldname": "table_number",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Table Number"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Not Arrived\nArrived\nCancelled"
+  },
+  {
+   "fieldname": "check_in_time",
+   "fieldtype": "Datetime",
+   "label": "Check-in Time"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Link",
+   "label": "Table",
+   "options": "Table"
+  },
+  {
+   "default": "1",
+   "fieldname": "number_of_attendees",
+   "fieldtype": "Int",
+   "label": "Number Of Attendees"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-05 16:58:45.837166",
+ "modified_by": "Administrator",
+ "module": "Guestbook",
+ "name": "Guest",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

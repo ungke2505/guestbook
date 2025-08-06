@@ -1,0 +1,17 @@
+{% extends "templates/web.html" %}
+
+{% block title %}Guest Check-in{% endblock %}
+
+{% block page_content %}
+  <div class="guest-checkin">
+    <h2>Guest Check-in</h2>
+    <input type="text" id="guest-name" placeholder="Masukkan Nama Lengkap Tamu">
+    <button id="search-guest">Cari</button>
+
+    <div id="result" style="margin-top: 20px;"></div>
+  </div>
+{% endblock %}
+
+{% block script %}
+  <script src="/assets/guestbook/js/guest_checkin.js"></script>
+{% endblock %}

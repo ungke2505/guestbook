@@ -5,6 +5,14 @@ app_description = "Wedding Application"
 app_email = "merckiano@outlook.com"
 app_license = "mit"
 
+
+
+
+app_include_css = [
+    "/assets/guestbook/css/meja_layout.css"
+]
+
+
 # Apps
 # ------------------
 
